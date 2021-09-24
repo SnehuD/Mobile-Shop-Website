@@ -1,0 +1,77 @@
+<html>
+    <head>
+      
+      <link rel="stylesheet" type="text/css" href="buttoncss.css">
+    </head>
+    <title>Realme Shop</title>
+  <style>
+
+      #xyz
+         {
+          text-align: center;
+            border: 10px;
+          border-style:double;
+          border-radius: 60px;
+              width: 500px;
+          height: 600px;
+            margin: 10 auto 100px auto;
+            background:antiquewhite;
+      
+          }
+    
+  </style>
+    <body style="box-sizing: content-box; 
+    background-image: url(imgs/shopping.jpeg);" >
+          <div id="xyz">
+            <label><h2><i>Choose a brand:</i></h2></label>
+            <select name="brand" id="rbrand">
+              <option value="Realme 4"> <h2>Realme 4</h2></option>
+              <option value="Realme 8"> <h2>Realme 8</h2></option>
+              <option value="Realme Note 9"> <h2>Realme Note 9</h2></option>
+              <option value="Realme Note 10 Pro"> <h2>Realme Note 10 Pro</h2></option>
+            </select>
+          
+            <label><h2><i>Choose a RAM:</i></h2></label>
+            <select name="Ram" id="rram">
+              <option value="3GB">3 GB</option>
+              <option value="4GB">4 GB</option>
+              <option value="6GB">6 GB</option>
+              <option value="8GB">8 GB</option>
+            </select>   
+
+            <label><h2><i>Choose a Storage:</i></h2></label>
+            <select name="Storage" id="rstorge">
+              <option value="32GB">32 GB</option>
+              <option value="64GB">64 GB</option>
+              <option value="128GB">128 GB</option>
+            </select>
+
+            <label><h2><i>Choose a Battery power:</i></h2></label>   
+            <select name="Battery" id="rbattery">
+                <option value="3000mh">3300mh</option>
+                <option value="4000mh">4000mh</option>
+                <option value="4500mh">4500mh</option>
+                <option value="5500mh">5500mh</option>
+              </select> 
+
+              <label><h2><i>Choose a Quantity:</i></h2></label>
+              <select name="Quantity" id="rquantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select> 
+
+              <hr>
+              <p style="text-align:center;"><button type="button" class="button" onclick="display()">ADD TO CART</button></p></a>
+             <script>
+                function display()
+                {
+                   var mname=document.getElementById("rbrand").value;
+                   alert(mname+" is added to your cart..");
+                   
+                }
+         </script>
+         </div>
+     </body>
+</html>

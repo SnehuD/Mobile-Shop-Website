@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="full.css">
+
+<link rel="stylesheet" type="text/css" href="buttoncss.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.bgimg 
+{
+  background-image: url('imgs/login1.jpeg');
+  height: 100%;
+  background-color : blue;
+  background-position: center;
+  background-size: cover;
+  background-height : auto;
+}
+
+h1
+{	
+	color : orchid;
+	font-style : italic;
+	font-style : bold;
+}
+
+h2
+{	
+	color : green;
+	font-style : italic;
+	font-style : bold;
+}
+
+button
+{
+	transition-duration :0.4s;
+	font-size : 80%;
+	border : 3px solid purple;
+}
+
+button:hover 
+{
+  background-color : aqua;
+  font-size : 17px;  
+}
+
+p
+{
+	font-size : 100%;
+	color : aqua;
+	line-height : 3;	
+}
+
+<!--- .log
+{
+ 	 background-color:#e5e5e5;
+  	 top:57000%;
+ 	 border: 3px solid red;
+ 	 border-radius: 100px;
+ 	 text-align:center;
+ 	 margin: auto;
+ 	 width: 60%;
+ 	 padding: 10px;
+}
+--->
+
+input
+{
+        outline: none;
+        border: none;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 10px;
+        border: 3px solid rgb(163, 13, 13);
+}
+</style>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Reg using html</title>
+</head>
+</head>
+
+
+<body class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<marquee direction = "left" behavior = "alternate" scrollamount = "15"><h1>!! LOGIN HERE !!</h1></marquee>
+
+		<button>
+			<a href="index.html"><b id = "h"><i>BACK</i></b></a>
+		</button>
+		
+		<button>
+			<a href="index.html"><b id = "h"><i>HOME</i></b></a>
+		</button>
+
+		<button>
+				<a href="contactus.html"><b id = "h"><i>CONTACT</i></b></a>
+		</button>
+
+		<button>
+				<a href="aboutus.html"><b id = "h"><i>ABOUT</i></b></a>
+		</button>
+
+		<button>
+				<a href="contactus.html"><b id = "h"><i>NEXT</i></b></a>
+		</button>
+
+		<br><br>
+
+		
+		<marquee behavior="slide" scrollamount="40" hspace = "2%"  width = "50%">
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+	<form action="ContRes.html">
+		<table vspace = "30%"><td>
+			<u><h3><p style="text-align:center;"><u>LOGIN</u>&nbsp;<span class="glyphicon glyphicon-user"></span></p>Contact Us</h3></u>
+			<h2>Username :&nbsp;<input type="text" id="Uname"><br></h2><h2>
+ 			Password : &nbsp;<input type="password" id="pass"><br></h2>
+
+			<h2>City : &nbsp;
+			<select>
+				<option>Pune</option>
+				<option>Mumbai</option>
+				<option>Delhi</option>
+				<option>Nashik</option>
+			</select>
+			</h2>
+
+			<br>
+
+
+	<h2>Gender : &nbsp;&nbsp;
+		<br><input type="radio" value="male" name="ge">&nbsp;Male
+		<br><input type="radio" valye="female" name="ge">&nbsp;Female<br>
+	</h2>
+
+	<p style="text-align:center;">
+	<!--<button type="submit" name="LOGIN" onclick="display()"/>-->
+	<button type="button" class="button" onclick="display()">LOGIN</button>
+
+	<script>
+	function display()
+	{
+   		var un=document.getElementById("Uname").value;
+    		alert("welcome  "+un);
+ 		// alert("information saved sucessfully..");
+ 	}
+	</script>
+
+	</table>				
+	</form>
+	</marquee>
+
+</marquee>
+</body>
+</html>

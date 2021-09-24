@@ -1,0 +1,105 @@
+<?php
+    if(isset($_POST['register']))
+    {
+        $fname = $_POST['fname'];
+        $email = $_POST['email'];
+        $pass =$_POST['pass'];
+
+        $con = mysqli_connect("localhost","root","","userregistration");    
+        if (mysqli_connect_errno())
+        {
+            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        }
+	else
+	 	{
+            		$query = "insert into customer values('$fname','$email','$pass')";
+            		$result = mysqli_query($con,$query);
+            		if($result)
+			{
+                ?>
+                    <script>
+                        alert("Registered Successfully");
+                    </script>
+                <?php
+            }
+	    else
+	    {
+                echo "<p>Something Went Wrong</p>";
+            }
+        }
+    }
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reg using PHP</title>
+</head>
+<style>
+    h2
+    {
+        text-align: center;
+    }
+    form
+    {
+        border: 5px solid white;
+        width: 400px;
+        margin: auto;
+        text-align: center;
+        border-radius: 20px;
+    }
+    table
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button
+    {
+        background-color: aquamarine;
+        border: 5px solid white;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    input
+    {
+        outline: none;
+        border: none;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 10px;
+        border: 3px solid aquamarine;
+    }
+</style>
+
+
+<body bgcolor="aqua">
+    <div class="container">
+        <h2>Registration form</h2>
+        <form action="" method="post">
+            <table>
+            <tr>
+            <td><input type="text" name="fname" placeholder="Full Name" required></td>
+            </tr>
+            <tr>
+            <td><input type="email" name="email" placeholder="Email ID" required></td>
+            </tr>
+            <tr>
+            <td><input type="password" name="pass" placeholder="Password" required></td>
+            </tr>
+            </table>
+            <br>
+        <button type="submit" name="register">Register</button> 
+        <button>
+    		<a href="index.html">HOME</a>
+        </button>
+        </form>
+    </div>
+</body>
+
+</html>
